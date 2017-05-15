@@ -1,0 +1,30 @@
+PODS:
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - Masonry (1.0.2)
+  - Realm (2.5.1):
+    - Realm/Headers (= 2.5.1)
+  - Realm/Headers (2.5.1)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
+  - XLsn0wLoop (2.0.0)
+
+DEPENDENCIES:
+  - FMDB
+  - Masonry
+  - Realm
+  - SDWebImage
+  - XLsn0wLoop
+
+SPEC CHECKSUMS:
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  Realm: 32f86104d37c8521f864d4274050b38ba6190733
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  XLsn0wLoop: 86e8aae87e35539b715f09cd90e243eb10b5b4e9
+
+PODFILE CHECKSUM: d6d7e1d319c4ab22e225812aa58eed93880379b1
+
+COCOAPODS: 1.2.0

@@ -1,0 +1,38 @@
+//
+//  PrefixHeader.pch
+//  BaiSI
+//
+//  Created by 兰瑞益 on 17/2/1.
+//  Copyright © 2017年 www.lanruiyi.com. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import "UIBarButtonItem+Extension.h"
+#import "Header.h"
+/*** 如果希望某些内容能拷贝到任何源代码文件(OC\C\C++等), 那么就不要写在#ifdef __OBJC__和#endif之间 ***/
+
+
+/***** 在#ifdef __OBJC__和#endif之间的内容, 只会拷贝到OC源代码文件中, 不会拷贝到其他语言的源代码文件中 *****/
+#ifdef __OBJC__
+
+/*** 日志 ***/
+#ifdef DEBUG
+#define BSLog(...) NSLog(__VA_ARGS__)
+#else
+#define BSLog(...)
+#endif
+
+#define BSLogFunc BSLog(@"%s", __func__);
+
+/*** 颜色 ***/
+#define BSColorA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/255.0]
+#define BSColor(r, g, b) BSColorA((r), (g), (b), 255)
+#define BSRandomColor BSColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
+#define BSrayColor(v) BSColor((v), (v), (v))
+#define LCommonBgColor BSrayColor(206)
+
+#endif
+/***** 在#ifdef __OBJC__和#endif之间的内容, 只会拷贝到OC源代码文件中, 不会拷贝到其他语言的源代码文件中 *****/
+
+#endif /* PrefixHeader_pch */
